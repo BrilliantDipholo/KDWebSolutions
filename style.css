@@ -1,0 +1,227 @@
+
+/*
+check out media queries
+backend developement link to form and ensure that the form is submitted successfully
+backend developemnt using node js,express and react
+*/
+
+
+
+
+body{
+    font-family:Tahoma;
+    /* background-color:rgba(29, 74, 146, 0.543); */
+    margin:0;
+    padding:0;
+    background:linear-gradient(to bottom,#00000072,#00000030),url('https://media.geeksforgeeks.org/wp-content/uploads/20231205165904/web-development-image.webp');
+    background-attachment:fixed;
+    color:#ddd;
+    background-size: cover;
+}
+h2{
+    color:rgb(37, 225, 225);
+}
+.fri{
+    color:rgba(205, 205, 34, 0.896);
+}
+.sat{
+    color:rgba(16, 144, 16, 0.878);
+}
+.sun{
+    color:rgb(229, 213, 112);
+}
+.contact li{
+    font-size:16.8px;
+    font-weight:bold;
+}
+
+main section{
+    width:90%;
+}
+.about h2{
+    text-align:center;
+}
+.service{
+    font-family: tahoma;
+}
+header{
+    display:flex;
+    height:100px;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 18px 0 18px;
+    background-color:rgba(30, 31, 31, 0.855);
+    margin-bottom:15px;
+    width:100%;
+}
+header h1{
+    /* font-style:oblique; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing:1.2px;
+    color:rgba(34, 214, 214, 0.848);
+    min-width:100px;
+}
+h1 .initials{
+    color:rgba(249, 249, 250, 0.832);
+}
+.services li{
+    list-style:disc;
+    
+}
+.services li,.contact li{
+    text-wrap:nowrap;
+    width:100%;
+    font-weight:bold;
+    font-size: clamp(16px, 4vw, 19px); 
+}
+@media (max-width: 272px) {
+    .workingHrs h2{
+      font-size: clamp(19px, 4vw, 24px);
+    }
+  }
+  @media (max-width: 189px) {
+    header h1{
+      font-size:17px;
+    }
+  }
+@media (max-width: 347px) {
+    h1{
+      font-size:23px;
+    }
+  }
+
+main{
+    border-radius:20px;
+    padding:18px;
+    width:90%;
+    background-color:rgba(30, 31, 31, 0.855);
+    min-height:676px;
+    margin-bottom:18px;
+    border:1px solid #5351516b;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    flex-direction:column;
+    row-gap:20px;
+}
+input{
+    padding:8px;
+    font-size:19px;
+    
+}
+input::placeholder,textarea::placeholder{
+    color:rgba(223, 219, 219, 0.704);
+}
+textarea{
+    padding:8px;
+    font-size:20px;
+    height:200px;
+}
+input,textarea{
+    color:rgba(223, 219, 219, 0.704);
+    background-color:rgba(1, 68, 77, 0.155);
+    border:1.5px solid #c4c3c3bb;
+    min-width:570px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.sendbtn{
+    background-color:rgba(9, 189, 174, 0.788);
+    border:1px solid;
+    border-radius:10px;
+    width:592px;
+    height:54px;
+    font-size:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+main p{
+    font-size:20px;
+    font-family:arial;
+    line-height: 1.4; /* Adds space between lines for better readability */
+    margin: 10px 0;   /* Adds vertical space between paragraphs */
+    padding: 0 15px;  /* Adds horizontal padding to prevent text from touching the edges */
+    word-wrap: break-word; /*Ensures long words break and don't overflow*/
+    white-space: normal;   /* Allows text to wrap properly */
+}
+footer{
+    background-color:rgba(0, 0, 0, 0.461);
+    height:140px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+}
+@media (max-width: 315px) {
+    .contact li{
+        text-wrap:wrap;
+        word-wrap: break-word;
+        font-size:14px;
+    }
+  }
+@media (max-width: 311px) {
+    footer p{
+        font-size:12px;
+    }
+  }
+@media (max-width: 215px) {
+    footer p{
+        font-size:10px;
+    }
+  }
+@media (max-width: 245px) {
+    .services li{
+        font-size:14px;
+    }
+  }
+@media (max-width: 389px) {
+    footer{
+        position:relative;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+  }
+@media (max-width:413px){
+    main p{
+        font-size:15px;
+        font-family:arial;
+        line-height: 1.2; /* Adds space between lines for better readability */
+        margin: 6px 0;   /* Adds vertical space between paragraphs */
+        padding: 0 10px;  /* Adds horizontal padding to prevent text from touching the edges */
+        
+    }
+}
+@media (max-width:305px){
+    main p{
+        font-size:12px;
+        font-family:arial;
+        line-height: 1; /* Adds space between lines for better readability */
+        margin: 4px 0;   /* Adds vertical space between paragraphs */
+        padding: 0 7px;  /* Adds horizontal padding to prevent text from touching the edges */
+        
+    }
+}
+@media (max-width:245px){
+    main p{
+        font-size:11px;
+        font-family:arial;
+        line-height:0.9; /* Adds space between lines for better readability */
+        margin: 3px 0;   /* Adds vertical space between paragraphs */
+        padding: 0 5px;  /* Adds horizontal padding to prevent text from touching the edges */
+        
+    }
+}
+@media (max-width:209px){
+    .contact li{
+        font-size:13px;
+    }
+}
